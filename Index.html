@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Chandrashekhar - Backend Developer specializing in Django, REST APIs, and scalable systems." />
+  <title>Chandra Shekhar | Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-gradient"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">CS<span class="dot">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-hire">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Available for work
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Chandra Shekhar</span>
+      </h1>
+      <div class="typewriter-wrap">
+        <span class="typewriter-prefix">I build </span>
+        <span class="typewriter" id="typewriter"></span>
+      </div>
+      <p class="hero-desc">
+        Backend Developer crafting scalable REST APIs, intelligent AI agents,
+        and robust systems using Django, Python & modern cloud infrastructure.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work <span class="arrow">→</span></a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Technologies</span></div>
+        <div class="stat-divider"></div>
+        
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-window">
+        <div class="window-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="window-title">developer.py</span>
+        </div>
+        <pre class="code-block"><code><span class="c-kw">class</span> <span class="c-cls">Developer</span>:
+    <span class="c-kw">def</span> <span class="c-fn">__init__</span>(self):
+        self.name   = <span class="c-str">"Chandra Shekhar"</span>
+        self.role   = <span class="c-str">"Backend Developer"</span>
+        self.stack  = [<span class="c-str">"Django"</span>, <span class="c-str">"Python"</span>,
+                       <span class="c-str">"REST APIs"</span>, <span class="c-str">"Docker"</span>]
+        self.loves  = [<span class="c-str">"Clean Code"</span>,
+                       <span class="c-str">"Scalability"</span>,
+                       <span class="c-str">"Problem Solving"</span>]
+
+    <span class="c-kw">def</span> <span class="c-fn">build</span>(self, idea):
+        <span class="c-kw">return</span> <span class="c-str">f"Turning {idea} into reality"</span>
+
+me = <span class="c-cls">Developer</span>()
+<span class="c-fn">print</span>(me.build(<span class="c-str">"your vision"</span>))
+<span class="c-cmt"># → Turning your vision into reality</span>
+</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <span class="avatar-icon">👨‍💻</span>
+            </div>
+          </div>
+          <div class="avatar-badges">
+            <div class="a-badge"><span>🐍</span> Python</div>
+            <div class="a-badge"><span>🚀</span> Django</div>
+            <div class="a-badge"><span>🤖</span> JWT Auth</div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a passionate <strong>Backend Developer</strong> who loves building robust,
+            scalable, and well-architected software solutions. My expertise lies in
+            designing and implementing <strong>RESTful APIs</strong>, authentication systems,
+            and AI-powered agents.
+          </p>
+          <p>
+            I've worked on real-world projects including a <strong>Workspace Booking API</strong>,
+            a <strong>Code Review Agent</strong>, and an <strong>OS Detector Middleware</strong> —
+            each challenging me to apply clean architecture principles and solve complex engineering problems.
+          </p>
+          <p>
+            I care deeply about <strong>code quality</strong>, security, and developer experience.
+            I'm always exploring new technologies and pushing the boundaries of what's possible.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item"><span class="info-label">📍 Location</span><span class="info-val">India</span></div>
+            <div class="info-item"><span class="info-label">💼 Role</span><span class="info-val">Backend
+                Developer</span></div>
+            <div class="info-item"><span class="info-label">🎓 Focus</span><span class="info-val">Django & APIs</span>
+            </div>
+            <div class="info-item"><span class="info-label">📧 Available</span><span class="info-val">Open to
+                Work</span></div>
+          </div>
+          <a href="#contact" class="btn-primary mt-20">Let's Connect →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Use</span>
+        <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-level="90">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+          <p>Core language for backend logic, scripting and automation</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="90"></div>
+          </div>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-card" data-level="85">
+          <div class="skill-icon">🌐</div>
+          <h3>Django & DRF</h3>
+          <p>Building REST APIs, auth systems, and full-stack apps</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="85"></div>
+          </div>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-card" data-level="80">
+          <div class="skill-icon">🗄️</div>
+          <h3>PostgreSQL</h3>
+          <p>Relational database design, queries and optimization</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="80"></div>
+          </div>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-card" data-level="75">
+          <div class="skill-icon">🐳</div>
+          <h3>Docker</h3>
+          <p>Containerization, Docker Compose, and deployment</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="75"></div>
+          </div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-card" data-level="70">
+          <div class="skill-icon">🔐</div>
+          <h3>JWT & Auth</h3>
+          <p>Secure authentication, OAuth2, and session management</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="70"></div>
+          </div>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-card" data-level="65">
+          <div class="skill-icon">☁️</div>
+          <h3>Cloud & CI/CD</h3>
+          <p>Git, GitHub Actions, and basic cloud deployments</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="65"></div>
+          </div>
+          <span class="skill-pct">65%</span>
+        </div>
+        <div class="skill-card" data-level="68">
+          <div class="skill-icon">📦</div>
+          <h3>Redis & Celery</h3>
+          <p>Async task queues, caching, and background jobs</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="68"></div>
+          </div>
+          <span class="skill-pct">68%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <span class="project-tag">REST API</span>
+            <span class="project-featured-badge">⭐ Featured</span>
+          </div>
+          <div class="project-icon-wrap"><span class="project-icon">🏢</span></div>
+          <h3 class="project-title">Workspace Booking API</h3>
+          <p class="project-desc">
+            A production-ready REST API for managing workspace reservations. Features
+            JWT authentication, role-based access control, real-time availability checks,
+            and PostgreSQL-backed persistence with Docker containerization.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">DRF</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" id="proj1-github">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+            <a href="https://github.com/chandrashekhar674/Booking-System" class="project-link primary" id="proj1-demo">View Project→</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <span class="project-tag">AI Agent</span>
+          </div>
+          <div class="project-icon-wrap"><span class="project-icon">🤖</span></div>
+          <h3 class="project-title">Code Review Agent</h3>
+          <p class="project-desc">
+            An intelligent AI-powered agent that performs automated code reviews.
+            Integrates with  APIs to analyze code quality, detect bugs, suggest
+            improvements, and enforce best practices — streamlining the review process.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Background Task</span>
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">REST API</span>
+            
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" id="proj2-github">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+            <a href="https://github.com/chandrashekhar674/Code-Review-Agent" class="project-link primary" id="proj2-demo">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <span class="project-tag">Middleware</span>
+          </div>
+          <div class="project-icon-wrap"><span class="project-icon">🖥️</span></div>
+          <h3 class="project-title">OS Detector Middleware</h3>
+          <p class="project-desc">
+            A Django middleware layer that intelligently detects and classifies client
+            operating systems from request headers. Enables dynamic content delivery,
+            analytics, and platform-specific feature toggling at the infrastructure level.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">Middleware</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">User-Agent</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" id="proj3-github">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+            <a href="https://github.com/chandrashekhar674/OS-Detector-Middleware" class="project-link primary" id="proj3-demo">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <span class="project-tag">Auth System</span>
+          </div>
+          <div class="project-icon-wrap"><span class="project-icon">🔐</span></div>
+          <h3 class="project-title">Secure Login System</h3>
+          <p class="project-desc">
+            A production-grade Django authentication system with multi-layered security.
+            Features custom user model, session management, CSRF protection,
+            rate limiting, and Docker deployment for enterprise-level security.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">Security</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Sessions</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" id="proj4-github">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+            <a href="#" class="project-link primary" id="proj4-demo">View Project →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Have a project in mind or want to discuss opportunities? I'd love to hear from you.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card" id="contact-email">
+            <div class="contact-icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="chandrashekhar2367@gmail.com">chandrashekhar2367@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-linkedin">
+            <div class="contact-icon">💼</div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p><a href="https://www.linkedin.com/in/chandrashekhar28/">chandrashekhar28</a></p>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-github">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <h4>GitHub</h4>
+              <p><a href="https://github.com/chandrashekhar674">chandrashekhar674</a></p>
+            </div>
+          </div>
+          <div class="availability-badge">
+            <span class="avail-dot"></span>
+            Currently open to full-time & freelance opportunities
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Discussion" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn-primary w-full" id="submit-btn">
+            Send Message <span class="arrow">→</span>
+          </button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo">CS<span class="dot">.</span></span>
+      <p>Built with ❤️ by Chandra Shekhar · © 2025 All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
